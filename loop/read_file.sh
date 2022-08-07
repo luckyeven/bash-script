@@ -4,7 +4,7 @@
 file="provinces"
 count=1
 
-IFS.OLD=$IFS
+IFSOLD=$IFS
 IFS=$'\n'
 
 for province in $(cat $file)
@@ -13,4 +13,4 @@ do
     ((count++))
 done
 
-IFS=$IFS.OLD
+IFS=$IFSOLD
