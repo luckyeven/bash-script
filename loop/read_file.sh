@@ -4,7 +4,11 @@
 file="provinces"
 count=1
 
+<<<<<<< HEAD
 IFSOLD=$IFS
+=======
+IFS.OLD=$IFS
+>>>>>>> main
 IFS=$'\n'
 
 for province in $(cat $file)
@@ -13,4 +17,8 @@ do
     ((count++))
 done
 
+<<<<<<< HEAD
 IFS=$IFSOLD
+=======
+IFS=$IFS.OLD
+>>>>>>> main
